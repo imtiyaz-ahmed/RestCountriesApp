@@ -1,0 +1,49 @@
+<div class="container-fluid mt-2" *ngFor="let country of region$">
+
+  <div class="row">
+    <div class="col">
+      <div class="jumbotron">
+        <img src="{{ country.flag }}" class="img-fluid" alt="{{ country.name }}">
+        <h1 class="display-4">{{ country.name }}</h1>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <img src="{{ country.flag }}" class="img-fluid" alt="{{ country.name }}">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4 mt-2 mb-2">
+
+      <div class="card m-1" style="width: 100%;">
+        <div class="card-body">
+          <h5 class="card-title">Details:</h5>
+          <p class="card-text">Capital: {{ country.capital }}</p>
+          <p class="card-text">Subregion: {{ country.subregion }}</p>
+          <p class="card-text">Population: {{ country.population }}</p>
+          <p class="card-text">Area: {{ country.area }}</p>
+          <p class="card-text">Native name of {{ country.name }}: {{ country.nativeName }}</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4 mt-2 mb-2">
+      <div class="card m-1" style="width: 100%;">
+        <div class="card-body">
+          <h5 class="card-title">Languages and Currencies:</h5>
+          <p class="card-text">Languages: {{ country.languages.name }}</p>
+          <p class="card-text">Currencies: {{ country.currencies }}</p>
+          <p class="card-text">Timezone: {{ country.timezones }}</p>
+          <p class="card-text">Calling codes: {{ country.callingCodes }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div> <!-- end of container fluid -->

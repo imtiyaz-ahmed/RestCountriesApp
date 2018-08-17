@@ -1,0 +1,52 @@
+<nav class="navbar navbar-expand-lg navbar-dark navBgColor">
+
+  <a class="navbar-brand" routerLink="/">Countries of the World</a>
+
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarNav"
+    aria-controls="navbarNav"
+    aria-expanded="false"
+    aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav mr-auto">
+
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/home">Home</a>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a
+          class="nav-link dropdown-toggle"
+          style="cursor: pointer;"
+          id="navbarDropdown"
+          role="button"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false">
+          Regions
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" style="cursor: pointer;" routerLink="/africa">Africa</a>
+          <a class="dropdown-item" style="cursor: pointer;" routerLink="/americas">Americas</a>
+          <a class="dropdown-item" style="cursor: pointer;" routerLink="/asia">Asia</a>
+          <a class="dropdown-item" style="cursor: pointer;" routerLink="/europe">Europe</a>
+          <a class="dropdown-item" style="cursor: pointer;" routerLink="/oceania">Oceania</a>
+        </div>
+      </li>
+
+    </ul> <!-- end of navbar ul list -->
+
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search countries here..." aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" value="name" type="submit" routerLink="/single-country/value">Search</button>
+    </form> <!-- end of form -->
+
+  </div> <!-- end of navbar-collapse -->
+
+</nav> <!-- end of navbar -->

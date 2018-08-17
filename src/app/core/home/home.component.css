@@ -1,0 +1,12 @@
+.whiteText {
+    color: white;
+}
+
+.bigText {
+    font-size: 2rem;
+    color: #d9e0f2;
+}
+
+.circle {
+    border-radius: 50%;
+}

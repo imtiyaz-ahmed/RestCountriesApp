@@ -1,0 +1,30 @@
+<div class="container-fluid mt-2">
+
+  <div class="row">
+    <div class="col-xs-12">
+      <button class="btn btn-warning" type="button" (click)="goBack()">Go Back</button>
+    </div>
+  </div>
+
+  <div class="row" *ngIf="oceaniaRegion$">
+    <div class="col-md-4 mt-2 mb-2" *ngFor="let country of oceaniaRegion$">
+      <a style="cursor: pointer;">
+        <div class="card" style="width: 15rem; height: 22rem;" routerLink="/single-country/{{ country.name }}">
+          <img class="card-img-top img-thumbnail" src="{{ country.flag }}" alt="{{ country.name }}">
+          <div class="card-body">
+            <h5 class="card-title">{{ country.name }}</h5>
+            <p class="card-text">Capital: {{ country.capital }}</p>
+            <p class="card-text">Subregion: {{ country.subregion }}</p>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-12">
+      <button class="btn btn-warning" type="button" (click)="goBack()">Go Back</button>
+    </div>
+  </div>
+
+</div>
